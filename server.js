@@ -25,9 +25,9 @@ app.get("/api/hello", function (req, res) {
 });
 
 //get ip data
-app.get("/api/whoami", (req, res) {
+app.get("/api/whoami", (req, res) => {
   res.json({
-    ipaddress: req.ip.toString
+    ipaddress: req.ip
   });
 });
 
